@@ -1,0 +1,69 @@
+Defn: Document Object Model(DOM)
+- interface
+- connect js and html+css
+
+*****************************************************************
+Everything in html is stored inside of the document object
+picture: http://webdev.slides.com/coltsteele/intro-to-the-dom-70#/4
+
+******************************************************************
+How do we change the color in js?
+--> var h1 = document.querySelector("h1");
+--> h1.style.color = "pink";
+
+*****************************************************************
+setIntervel(function(){}, <time intervel (in milisecond>)
+every <time intervel>, it will call the function
+
+*****************************************************************
+Methods in document object
+1. document.getElementById()
+2. document.getElementsByClassName()
+3. document.getElementsByTagName()
+4. document.querySelector()
+5. document.querySelectorAll()
+
+1. suppose you used id as the type, you can use this to select the item(s) with that id name.
+eg: var tag = document.getElementById("highlight");
+picture:http://webdev.slides.com/coltsteele/deck-30-71#/4
+
+2&3. similar to above
+
+4. return the first element matches. can replace 1, 2, 3 if you just want to select the first not the rest items with the same name
+however, we need to write in these ways:
+#+id
+.+class name
+
+**************************************************************
+Do not change style in js, intead you shoud write a class in css and then add the class to the calssList of the selected element. This means you can change multiple style to the element(eg: "h1")
+Picture: http://webdev.slides.com/coltsteele/deck-30-31-72#/4
+
+There three main method related to classList:
+<element>.classList.add(<css class name>)
+<element>.classList.remove(<css class name>)
+<element>.classList.toggle(<css class name>)
+
+The third one is aimed to change the states of the css class
+To be specific, if teh class already exists in calssList, it will remove the class; vise versa.
+
+****************************************************************
+Some methods to get the different part of a tag
+<element>.textContent -- get the content
+you can also reset the value
+<element>.innerHTML -- get the html
+<element>.getAttribute("<attributes(eg: href, src)>")
+<element>.setAttributes("<attributes(eg: href, src)>", "<the attribute you have>")
+
+
+
+
+
+
+
+
+
+
+
+
+
+

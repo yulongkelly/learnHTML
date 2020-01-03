@@ -1,0 +1,38 @@
+Function Declaration VS Function Expression
+// function declaration
+function capitalize(str) {
+	return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
+// function expression
+var capitalize = function (str) {
+	return str.charAt(0).toUpperCase() + str.slice(1);
+}
+Note: In the second case, the function is anonymous, and it is just the value of capitalize. If we change the value, the function would disappear forever.
+Also notice that in the second case, capitalize is a function(typeof "function")
+
+
+Scope:
+In html, a function can access the variable from outside, and we can define a variable with the same name as many time as we want but the value always corresponding to the last definition. If we define a var inside the function, we cannot print it outside
+
+
+Array
+In html, if I want to add an element into the array, we just simply write(array[size+1] = x;) and do not need to resize
+
+Initialize:
+var array = [];
+var array = new Array();
+
+Array can hold mixed type of data;
+
+Push and Pop
+.push(); --> add var into the tail of the array
+.pop(); --> remove the last element
+.unshift(x); --> add var into the head of the array
+.shift(); --> remove the first element
+.indexOf(x); --> return the index of the array; return -1 if the element is not in the array.
+.slice(); --> copy another array 
+.splice(theStartIndex, theNumberofElementsYouWantToRemove); --> return the element in that position, and delete it(them)
+
+
+

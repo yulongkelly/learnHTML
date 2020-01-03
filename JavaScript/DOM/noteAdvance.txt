@@ -1,0 +1,6 @@
+DOM events
+examples:
+Clicking on a button
+Hovering over a link
+Dragging and Dropping
+Pressing the Enter key
